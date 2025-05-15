@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(./customModal.css);
+
+@font-face {
+  font-family: "BeVietnamPro";
+  src: url("../assets/fonts/be_vietnam/BeVietnamPro-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeVietnamPro";
+  src: url("../assets/fonts/be_vietnam/BeVietnamPro-Thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeVietnamPro";
+  src: url("../assets/fonts/be_vietnam/BeVietnamPro-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeVietnamPro";
+  src: url("../assets/fonts/be_vietnam/BeVietnamPro-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeVietnamPro";
+  src: url("../assets/fonts/be_vietnam/BeVietnamPro-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeVietnamPro";
+  src: url("../assets/fonts/be_vietnam/BeVietnamPro-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeVietnamPro";
+  src: url("../assets/fonts/be_vietnam/BeVietnamPro-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeVietnamPro";
+  src: url("../assets/fonts/be_vietnam/BeVietnamPro-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BeVietnamPro";
+  src: url("../assets/fonts/be_vietnam/BeVietnamPro-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Inter Fonts */
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter/Inter-ExtraLightItalic.ttf");
+  font-weight: 200;
+  font-style: italic;
+}
+
+html {
+  font-family: "BeVietnamPro", "Inter";
+}
+
+a {
+  @apply text-blue-700;
+}
+
+a:hover {
+  @apply border-b-2 border-blue-700;
+}
+
+div,
+p,
+span,
+a {
+  font-size: 14px;
+}
+
+.branch-menu {
+  min-width: 200px !important;
+  inset: 64px auto auto calc(100vw - 276px) !important;
+}
+
+.hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.search-product {
+  width: 1000px !important;
+}
+
+.custom-badge .ant-badge-dot {
+  position: absolute;
+  top: 7px;
+  left: 17px;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0000;
+  border: 1px solid #ffffff;
+}
+
+.ant-picker-ok .ant-btn span {
+  color: black;
+}
+
+.ant-timeline-item-tail {
+  border-inline-start: 2px dashed rgba(5, 5, 5, 0.06) !important;
+}
+
+.bg-auth {
+  background-image: url("../assets/images/bg_auth.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.header-menu_item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+}
+
+.ant-popover-inner {
+  padding: 0px !important;
+}
+
+.ant-popover-title {
+  padding: 12px !important;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  @apply h-fit rounded-xl bg-white 2xs:p-4 sm:p-5 md:p-6 shadow-lg;
+}
+.ant-drawer-header {
+  display: none !important;
+}
+
+.ant-drawer-body {
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+.ant-upload-list-item-container {
+  width: 100% !important;
+  height: 145px !important;
+}
+
+.custom-select-wrapper .ant-select {
+  min-height: 80px !important;
+}
+
+.input-type--time {
+  position: relative;
+}
+
+.input-type--time::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 44px;
+  background: red;
+  top: 0;
+  left: -5px;
+  background: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.input-type--time .normal-select .ant-select-selector {
+  background-color: #eff2f9 !important;
+}
+
+.input-time .ant-input:focus {
+  border-color: #ccc !important;
+}
+
+.movediv {
+  cursor: pointer;
+  user-select: none; /* Ngăn chặn chọn văn bản */
+  -webkit-user-select: none; /* Hỗ trợ cho trình duyệt Safari */
+  -moz-user-select: none; /* Hỗ trợ cho Firefox */
+  -ms-user-select: none; /* Hỗ trợ cho Internet Explorer/Edge */
+}
+
+.text-line-1 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ant-modal {
+  width: auto !important;
+}
+
+.hidden-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.ant-message-notice-content {
+  padding: 0 !important;
+  border-radius: 999px !important;
+}
+
+.ant-message-custom-content {
+  padding: 9px 12px !important;
+}
+
+.ant-message-undefined {
+  padding: 0 !important;
+}
+
+.delete-bill-modal .ant-modal-content {
+  width: 500px !important;
+}
+
+.discount-radio .ant-space-vertical {
+  width: 100%;
+}
+
+.discount-radio {
+  width: 100%;
+}
+
+.discount-radio .ant-radio-wrapper {
+  width: 100%;
+}
