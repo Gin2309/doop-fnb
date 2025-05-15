@@ -42,4 +42,4 @@ jobs:
           user: ${{ secrets.SSH_USER }}
           pass: ${{ secrets.SSH_PASSWORD }}
           port: 22
-          run: "cd Project/doop-fnb-fe && ./build.sh"
+          run: "cd Project/doop-fnb && ./build.sh"
